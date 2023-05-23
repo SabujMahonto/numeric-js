@@ -1,3 +1,4 @@
+//Descriptions: numeric js - toFixed,parseInt ,ParseFloat,
 // type
 console.log(30 === 30.0); //true
 console.log(30 === 30.1); //false
@@ -12,3 +13,16 @@ const sum = a + b;
 console.log(sum.toFixed(1)); // output == string
 console.log(Number(sum.toFixed(1))); // output == Number
 // console.log(+sum.toFixed(1)); // output == Number // latest technic
+
+// parsing
+console.log(parseInt("8rem"));
+console.log(parseInt("8.5rem"));
+console.log(parseFloat("8.5rem"));
+console.log(parseFloat("8rem"));
+
+// Number -- Object namespace
+console.log(Number.parseInt("16px"));
+
+//NaN
+console.log(Number.isNaN(29));
+console.log(30 / 0); // infinity
