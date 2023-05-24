@@ -36,4 +36,8 @@ console.log(isFinite(parseInt("34px"))); // true
 // Math
 console.log(Math.sqrt(25)); // 5
 console.log(25 ** (1 / 2)); //square root
-console.log(25 ** (1 / 3)); //Quic root
+console.log(25 ** (1 / 3)); //Qubic root
+
+const arr = [24, 26, 33, 64, 83, 20];
+console.log(Math.max(...arr));
+console.log(Math.min(...arr));
