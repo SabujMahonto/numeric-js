@@ -26,3 +26,9 @@ console.log(Number.parseInt("16px"));
 //NaN
 console.log(Number.isNaN(29));
 console.log(30 / 0); // infinity
+
+// Number
+console.log(isFinite(30)); // true
+console.log(isFinite(30 / 0)); // false
+console.log(isFinite("24px")); // false
+console.log(isFinite(parseInt("34px"))); // true
