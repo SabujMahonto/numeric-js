@@ -32,3 +32,8 @@ console.log(isFinite(30)); // true
 console.log(isFinite(30 / 0)); // false
 console.log(isFinite("24px")); // false
 console.log(isFinite(parseInt("34px"))); // true
+
+// Math
+console.log(Math.sqrt(25)); // 5
+console.log(25 ** (1 / 2)); //square root
+console.log(25 ** (1 / 3)); //Quic root
