@@ -53,3 +53,11 @@ console.log(Math.floor(2.5)); // 2
 console.log(Math.ceil(2.1)); // 3
 console.log(Math.round(2.4)); // 2
 console.log(Math.round(2.5)); // 3
+// console.log(2,34,550);
+console.log(2_34_550);
+//ES2020 (BigInt)
+//64 bit number system in js
+console.log(923874234334387987238947934723947838473493);
+console.log(100000000n + 10000000n);
+console.log(20n === 20); //false
+console.log(typeof 20n); // bigint
