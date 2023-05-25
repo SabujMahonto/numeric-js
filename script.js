@@ -61,3 +61,24 @@ console.log(923874234334387987238947934723947838473493);
 console.log(100000000n + 10000000n);
 console.log(20n === 20); //false
 console.log(typeof 20n); // bigint
+
+// Date
+const today = new Date();
+
+console.log(today);
+// timeStamp
+console.log(new Date(0));
+const myTime = new Date(2044, 10, 20, 10, 20, 30, 300);
+console.log(myTime);
+
+console.log(myTime.getFullYear());
+console.log(myTime.getMonth());
+console.log(myTime.getDay());
+console.log(myTime.getDate());
+console.log(myTime.getHours());
+console.log(myTime.getSeconds());
+console.log(myTime.getMilliseconds());
+console.log(myTime.getTime());
+
+console.log(Date.now());
+console.log(new Date(1684996393802));
