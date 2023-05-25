@@ -41,3 +41,15 @@ console.log(25 ** (1 / 3)); //Qubic root
 const arr = [24, 26, 33, 64, 83, 20];
 console.log(Math.max(...arr));
 console.log(Math.min(...arr));
+
+//pi =
+//pi*r^2
+//2*pi*r^2
+// console.log(Math.PI * 2.5 ** 2);
+// console.log(Math.trunc(27.3422232));
+console.log(Math.random()); // 0-1
+console.log(Math.trunc(Math.random() * 10));
+console.log(Math.floor(2.5)); // 2
+console.log(Math.ceil(2.1)); // 3
+console.log(Math.round(2.4)); // 2
+console.log(Math.round(2.5)); // 3
