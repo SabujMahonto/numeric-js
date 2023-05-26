@@ -122,3 +122,28 @@ const displayRecentTime = new Intl.DateTimeFormat("en-US", options).format(
 );
 
 console.log(displayRecentTime);
+
+// setTimeout
+console.log("Hey There");
+setTimeout(() => {
+  console.log("hello");
+}, 2000);
+
+console.log("Hi");
+
+setTimeout(function () {
+  console.log("I am 3 second later");
+}, 3000);
+
+// setInterval()
+setInterval(() => {
+  console.log("I am repined 5 second before");
+}, 3000);
+
+setInterval(function () {
+  const now = new Date();
+  const hours = now.getHours();
+  const minute = now.getMinutes();
+  const second = now.getSeconds();
+  //   console.log(`${hours}:${minute}:${second}`);
+}, 1000);
