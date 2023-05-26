@@ -93,3 +93,14 @@ const displayTime = new Intl.DateTimeFormat("bn-BD").format(num);
 console.log(displayTime);
 
 console.log(navigator.language);
+
+//currency
+
+const money = 100;
+const displayMoney = new Intl.NumberFormat("en-US", {
+  //bn-BD
+  style: "currency",
+  currency: "USD", // dollar
+  //   currency: "BDT", // Taka
+}).format(money);
+console.log(displayMoney);
