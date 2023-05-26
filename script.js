@@ -104,3 +104,21 @@ const displayMoney = new Intl.NumberFormat("en-US", {
   //   currency: "BDT", // Taka
 }).format(money);
 console.log(displayMoney);
+
+// Time
+const recentTime = new Date();
+
+const options = {
+  weekday: "short", // long
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+  minute: "numeric",
+  hour: "numeric",
+};
+
+const displayRecentTime = new Intl.DateTimeFormat("en-US", options).format(
+  recentTime
+);
+
+console.log(displayRecentTime);
