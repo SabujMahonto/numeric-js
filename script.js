@@ -39,46 +39,57 @@ console.log(25 ** (1 / 2)); //square root
 console.log(25 ** (1 / 3)); //Qubic root
 
 const arr = [24, 26, 33, 64, 83, 20];
-console.log(Math.max(...arr));
-console.log(Math.min(...arr));
+// console.log(Math.max(...arr));
+// console.log(Math.min(...arr));
 
 //pi =
 //pi*r^2
 //2*pi*r^2
 // console.log(Math.PI * 2.5 ** 2);
 // console.log(Math.trunc(27.3422232));
-console.log(Math.random()); // 0-1
-console.log(Math.trunc(Math.random() * 10));
-console.log(Math.floor(2.5)); // 2
-console.log(Math.ceil(2.1)); // 3
-console.log(Math.round(2.4)); // 2
-console.log(Math.round(2.5)); // 3
+// console.log(Math.random()); // 0-1
+console.log(Math.trunc(Math.random() * 10 + 1));
+// console.log(Math.floor(2.5)); // 2
+// console.log(Math.ceil(2.1)); // 3
+// console.log(Math.round(2.4)); // 2
+// console.log(Math.round(2.5)); // 3
 // console.log(2,34,550);
-console.log(2_34_550);
+// console.log(2_34_550);
 //ES2020 (BigInt)
 //64 bit number system in js
-console.log(923874234334387987238947934723947838473493);
-console.log(100000000n + 10000000n);
-console.log(20n === 20); //false
-console.log(typeof 20n); // bigint
+// console.log(923874234334387987238947934723947838473493);
+// console.log(100000000n + 10000000n);
+// console.log(20n === 20); //false
+// console.log(typeof 20n); // bigint
 
-// Date
+// // Date
 const today = new Date();
 
 console.log(today);
 // timeStamp
 console.log(new Date(0));
-const myTime = new Date(2044, 10, 20, 10, 20, 30, 300);
-console.log(myTime);
+// const myTime = new Date(2044, 10, 20, 10, 20, 30, 300);
+// console.log(myTime);
 
-console.log(myTime.getFullYear());
-console.log(myTime.getMonth());
-console.log(myTime.getDay());
-console.log(myTime.getDate());
-console.log(myTime.getHours());
-console.log(myTime.getSeconds());
-console.log(myTime.getMilliseconds());
-console.log(myTime.getTime());
+// console.log(myTime.getFullYear());
+// console.log(myTime.getMonth());
+// console.log(myTime.getDay());
+// console.log(myTime.getDate());
+// console.log(myTime.getHours());
+// console.log(myTime.getSeconds());
+// console.log(myTime.getMilliseconds());
+// console.log(myTime.getTime());
+const newDate = new Date(1685113316285);
+const year = newDate.getFullYear();
+const month = newDate.getMonth();
+const date = newDate.getDate();
 
+console.log(`${date}/${month + 1}/${year}`);
 console.log(Date.now());
-console.log(new Date(1684996393802));
+
+// Intl  Number
+const num = 1685113316285;
+const displayTime = new Intl.DateTimeFormat("bn-BD").format(num);
+console.log(displayTime);
+
+console.log(navigator.language);
